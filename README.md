@@ -1,6 +1,6 @@
 ## HOW TO PERFORM CREATE, READ, UPDATE and DELETE in supabase.
 
-Open this link to read the blog post https://home.com
+Open this link to read the blog post(https://medium.com/@desmondnelson908/connect-supabase-to-flutter-crud-operation-5683b965952f)
 
 
 
