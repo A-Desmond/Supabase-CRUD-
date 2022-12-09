@@ -26,6 +26,8 @@ class _HomePageState extends State<HomePage> {
       'age': _ageController.text.trim(),
     };
     await supabaseClient.from('Users').insert(userData);
+    _ageController.clear();
+    _nameController.clear();
   }
 
   Future read() async {
@@ -41,6 +43,8 @@ class _HomePageState extends State<HomePage> {
         .from('Users')
         .update(updateMap)
         .eq('id', _idController.text.trim());
+        _idController.clear();
+        _nameController.clear();
   }
 
   void delete() async {
@@ -48,6 +52,7 @@ class _HomePageState extends State<HomePage> {
         .from('Users')
         .delete()
         .eq('id', _idController.text.trim());
+        _idController.clear();
   }
 
   @override
